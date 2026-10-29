@@ -1,20 +1,26 @@
-
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fasiha Nadeem | Cybersecurity CV</title>
-    <meta name="description" content="Personal CV and portfolio of Fasiha Nadeem, Computer Science student interested in Cybersecurity and Artificial Intelligence.">
+
+    <title>Fasiha Nadeem | Cybersecurity Portfolio</title>
+
+    <meta name="description" content="Portfolio of Fasiha Nadeem, Computer Science student interested in Cybersecurity and Artificial Intelligence.">
+
+    <meta name="theme-color" content="#24352E">
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
-    <header>
+    <!-- Navigation -->
+    <header class="site-header">
         <nav class="navbar">
-            <a href="#home" class="logo">FN.</a>
+            <a href="#home" class="logo" aria-label="Fasiha Nadeem home">FN<span>.</span></a>
 
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -22,203 +28,420 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#courses">Courses</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-contact">Contact Me ↗</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+
+        <!-- Hero Section -->
         <section id="home" class="hero">
-            <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+            <div class="hero-content">
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    COMPUTER SCIENCE STUDENT
+                </p>
 
-            <img
-                src="assets/fasiha.png"
-                alt="Professional profile avatar for Fasiha Nadeem"
-                class="profile-avatar"
-            >
+                <h1>
+                    Hi, I'm<br>
+                    <span>Fasiha Nadeem.</span>
+                </h1>
 
-            <h1>Hi, I'm <span>Fasiha Nadeem</span></h1>
-            <h2>Computer Science Student | Cybersecurity</h2>
-            <p>
-                I am a Computer Science student at Qarshi University,
-                currently in my 5th semester. I am interested in
-                Cybersecurity and Artificial Intelligence and continue
-                to develop my technical skills through coursework and projects.
-            </p>
+                <h2>Cybersecurity Enthusiast & AI Learner</h2>
 
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Projects</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                <p class="hero-description">
+                    I am a Computer Science student at Qarshi University,
+                    currently in my 5th semester. I am interested in
+                    Cybersecurity and Artificial Intelligence and enjoy
+                    learning new technologies through coursework and projects.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work ↗
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Get in Touch
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span>📍 Lahore, Pakistan</span>
+                    <span>🎓 BSCS — Class of 2028</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="profile-frame">
+                    <img
+                        src="assets/fasiha.png"
+                        alt="Profile avatar of Fasiha Nadeem"
+                        class="profile-avatar"
+                    >
+                </div>
+
+                <div class="floating-card">
+                    <span class="floating-icon">✦</span>
+                    <div>
+                        <strong>Always Learning</strong>
+                        <p>Growing through projects</p>
+                    </div>
+                </div>
+
+                <div class="hero-decoration decoration-one"></div>
+                <div class="hero-decoration decoration-two"></div>
             </div>
         </section>
 
+        <!-- About Section -->
         <section id="about" class="section">
-            <p class="eyebrow">GET TO KNOW ME</p>
-            <h2>About Me</h2>
-            <p>
-                I am a Computer Science student with a previous academic
-                background in Pre-Medical studies. I am interested in
-                technology, Cybersecurity, and Artificial Intelligence.
-            </p>
+            <div class="section-heading">
+                <p class="eyebrow">A LITTLE ABOUT ME</p>
+                <h2>Turning curiosity into <span>skills.</span></h2>
+            </div>
+
+            <div class="about-content card">
+                <div class="about-mark">FN.</div>
+
+                <div>
+                    <h3>My Journey in Technology</h3>
+                    <p>
+                        I am a Computer Science student with a previous
+                        academic background in Pre-Medical studies.
+                        My interests include technology, Cybersecurity,
+                        and Artificial Intelligence.
+                    </p>
+                    <p>
+                        I am building my technical knowledge through
+                        university studies, online courses, and practical
+                        projects. My goal is to keep learning and improve
+                        my skills step by step.
+                    </p>
+                </div>
+            </div>
         </section>
 
+        <!-- Education Section -->
         <section id="education" class="section">
-            <p class="eyebrow">MY ACADEMIC JOURNEY</p>
-            <h2>Education</h2>
-
-            <div class="card">
-                <h3>BS Computer Science (BSCS)</h3>
-                <p>Qarshi University</p>
-                <p>5th Semester</p>
-                <p>Expected Graduation: 2028</p>
+            <div class="section-heading">
+                <p class="eyebrow">MY ACADEMIC JOURNEY</p>
+                <h2>Education & <span>Background</span></h2>
             </div>
 
-            <div class="card">
-                <h3>FSc Pre-Medical</h3>
-                <p>Punjab Group of Colleges (PGC)</p>
-                <p>Completion Year: 2024</p>
+            <div class="education-grid">
+                <article class="card education-card">
+                    <div class="card-icon">🎓</div>
+                    <p class="card-label">CURRENT EDUCATION</p>
+                    <h3>BS Computer Science</h3>
+                    <p class="card-subtitle">Qarshi University</p>
+
+                    <div class="card-details">
+                        <span>5th Semester</span>
+                        <span>Expected Graduation: 2028</span>
+                    </div>
+                </article>
+
+                <article class="card education-card">
+                    <div class="card-icon">📚</div>
+                    <p class="card-label">PREVIOUS EDUCATION</p>
+                    <h3>FSc Pre-Medical</h3>
+                    <p class="card-subtitle">
+                        Punjab Group of Colleges (PGC)
+                    </p>
+
+                    <div class="card-details">
+                        <span>Completed in 2024</span>
+                    </div>
+                </article>
             </div>
         </section>
 
+        <!-- Skills Section -->
         <section id="skills" class="section">
-            <p class="eyebrow">WHAT I KNOW</p>
-            <h2>Technical Skills</h2>
-
-            <div class="skills-grid">
-                <div class="skill-card">C++</div>
-                <div class="skill-card">JavaScript</div>
-                <div class="skill-card">HTML</div>
-                <div class="skill-card">CSS</div>
-                <div class="skill-card">GitHub</div>
-                <div class="skill-card">Algorithms</div>
+            <div class="section-heading">
+                <p class="eyebrow">MY TOOLKIT</p>
+                <h2>Skills I am <span>developing.</span></h2>
+                <p>Technologies and strengths I use in my learning journey.</p>
             </div>
 
-            <h3>My Strengths</h3>
-            <div class="skills-grid">
-                <div class="skill-card">Teamwork</div>
-                <div class="skill-card">Time Management</div>
-                <div class="skill-card">Hardworking</div>
-                <div class="skill-card">Quick Learning</div>
-                <div class="skill-card">Creativity</div>
+            <div class="skills-panel card">
+                <h3>Technical Skills</h3>
+
+                <div class="skills-grid">
+                    <div class="skill-card"><span>01</span> C++</div>
+                    <div class="skill-card"><span>02</span> JavaScript</div>
+                    <div class="skill-card"><span>03</span> HTML</div>
+                    <div class="skill-card"><span>04</span> CSS</div>
+                    <div class="skill-card"><span>05</span> GitHub</div>
+                    <div class="skill-card"><span>06</span> Algorithms</div>
+                </div>
+
+                <h3 class="strengths-heading">Personal Strengths</h3>
+
+                <div class="skills-grid">
+                    <div class="skill-card">Teamwork</div>
+                    <div class="skill-card">Time Management</div>
+                    <div class="skill-card">Hardworking</div>
+                    <div class="skill-card">Quick Learning</div>
+                    <div class="skill-card">Creativity</div>
+                </div>
             </div>
         </section>
 
+        <!-- Projects Section -->
         <section id="projects" class="section">
-            <p class="eyebrow">MY WORK</p>
-            <h2>Projects</h2>
+            <div class="section-heading">
+                <p class="eyebrow">BUILT WHILE LEARNING</p>
+                <h2>Selected <span>Projects</span></h2>
+                <p>A collection of my academic and personal website projects.</p>
+            </div>
 
             <div class="projects-grid">
+
                 <article class="card project-card">
+                    <div class="project-top">
+                        <span class="project-number">01</span>
+                        <span class="project-symbol">⌘</span>
+                    </div>
+                    <p class="project-category">JAVA · GUI</p>
                     <h3>Course Management System</h3>
                     <p>
                         A Java GUI-based application with windows, buttons,
                         and forms to manage student and course records.
                     </p>
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>GUI</span>
+                    </div>
                 </article>
 
                 <article class="card project-card">
+                    <div class="project-top">
+                        <span class="project-number">02</span>
+                        <span class="project-symbol">⌘</span>
+                    </div>
+                    <p class="project-category">C++</p>
                     <h3>Student Management System</h3>
-                    <p>A project developed using C++.</p>
+                    <p>
+                        A student management project developed using C++.
+                    </p>
+                    <div class="project-tags">
+                        <span>C++</span>
+                        <span>Programming</span>
+                    </div>
                 </article>
 
                 <article class="card project-card">
+                    <div class="project-top">
+                        <span class="project-number">03</span>
+                        <span class="project-symbol">⌕</span>
+                    </div>
+                    <p class="project-category">ALGORITHMS</p>
                     <h3>Spell Checker</h3>
-                    <p>An algorithm-based project.</p>
+                    <p>
+                        An algorithm-based project focused on checking
+                        spelling in text.
+                    </p>
+                    <div class="project-tags">
+                        <span>Algorithms</span>
+                        <span>Logic</span>
+                    </div>
                 </article>
 
                 <article class="card project-card">
+                    <div class="project-top">
+                        <span class="project-number">04</span>
+                        <span class="project-symbol">✳</span>
+                    </div>
+                    <p class="project-category">WEB DEVELOPMENT</p>
                     <h3>AI & Tech Society Website</h3>
-                    <p>A website project for an AI and Technology Society.</p>
+                    <p>
+                        A website project created for an Artificial
+                        Intelligence and Technology Society.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
                 </article>
 
                 <article class="card project-card">
+                    <div class="project-top">
+                        <span class="project-number">05</span>
+                        <span class="project-symbol">☕</span>
+                    </div>
+                    <p class="project-category">WEB DESIGN</p>
                     <h3>Campus Caffè Website</h3>
-                    <p>A café website project.</p>
+                    <p>
+                        A café website project designed to present
+                        a campus café online.
+                    </p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
                 </article>
 
                 <article class="card project-card">
+                    <div class="project-top">
+                        <span class="project-number">06</span>
+                        <span class="project-symbol">✧</span>
+                    </div>
+                    <p class="project-category">BEAUTY · E-COMMERCE</p>
                     <h3>Glowé Skin Website</h3>
-                    <p>A skincare product website project.</p>
+                    <p>
+                        A skincare product website featuring product
+                        information and an order page.
+                    </p>
+                    <div class="project-tags">
+                        <span>Web Design</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
                 </article>
+
             </div>
         </section>
 
+        <!-- Courses Section -->
         <section id="courses" class="section">
-            <p class="eyebrow">CONTINUOUS LEARNING</p>
-            <h2>Courses & Certifications</h2>
+            <div class="section-heading">
+                <p class="eyebrow">CONTINUOUS LEARNING</p>
+                <h2>Courses & <span>Certifications</span></h2>
+                <p>Topics I have explored through online learning.</p>
+            </div>
 
             <div class="courses-grid">
                 <article class="card course-card">
+                    <span class="course-icon">✦</span>
                     <h3>Google AI Essentials</h3>
-                    <p>Artificial Intelligence</p>
+                    <p class="course-category">Artificial Intelligence</p>
                     <p>Introduction to AI tools and their practical use.</p>
                 </article>
 
                 <article class="card course-card">
+                    <span class="course-icon">⌘</span>
                     <h3>Cybersecurity</h3>
-                    <p>Cybersecurity</p>
-                    <p>Learning about cybersecurity concepts and practices.</p>
+                    <p class="course-category">Cybersecurity</p>
+                    <p>Learning cybersecurity concepts and practices.</p>
                 </article>
 
                 <article class="card course-card">
+                    <span class="course-icon">✎</span>
                     <h3>Prompt Engineering</h3>
-                    <p>AI Skills</p>
+                    <p class="course-category">AI Skills</p>
                     <p>Learning how to create and improve AI prompts.</p>
                 </article>
 
                 <article class="card course-card">
+                    <span class="course-icon">✧</span>
                     <h3>AI Fundamentals</h3>
-                    <p>Artificial Intelligence</p>
+                    <p class="course-category">Artificial Intelligence</p>
                     <p>Learning fundamental concepts of AI.</p>
                 </article>
 
                 <article class="card course-card">
+                    <span class="course-icon">◈</span>
                     <h3>Introduction to AI</h3>
-                    <p>Artificial Intelligence</p>
+                    <p class="course-category">Artificial Intelligence</p>
                     <p>Learning introductory concepts of artificial intelligence.</p>
                 </article>
             </div>
         </section>
 
+        <!-- Languages Section -->
         <section id="languages" class="section">
-            <p class="eyebrow">LANGUAGES</p>
-            <h2>Languages</h2>
+            <div class="section-heading">
+                <p class="eyebrow">COMMUNICATION</p>
+                <h2>Languages I <span>Speak</span></h2>
+            </div>
 
-            <div class="skills-grid">
-                <div class="skill-card">Urdu</div>
-                <div class="skill-card">English</div>
+            <div class="languages-grid">
+                <div class="language-card card">
+                    <span>🇵🇰</span>
+                    <div>
+                        <h3>Urdu</h3>
+                        <p>Language</p>
+                    </div>
+                </div>
+
+                <div class="language-card card">
+                    <span>🌐</span>
+                    <div>
+                        <h3>English</h3>
+                        <p>Language</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="contact" class="section">
-            <p class="eyebrow">LET'S CONNECT</p>
-            <h2>Contact Me</h2>
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="contact-intro">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2>Have a project or opportunity in mind?</h2>
+                <p>
+                    Feel free to contact me about learning, projects,
+                    internships, or opportunities in technology.
+                </p>
+
+                <a href="mailto:sheikhfasiha32@gmail.com" class="btn btn-primary">
+                    Email Me ↗
+                </a>
+            </div>
 
             <div class="card contact-card">
-                <p>
-                    <strong>Email:</strong>
-                    <a href="mailto:sheikhfasiha32@gmail.com">
-                        sheikhfasiha32@gmail.com
-                    </a>
-                </p>
+                <div class="contact-item">
+                    <span class="contact-icon">✉</span>
+                    <div>
+                        <p class="card-label">EMAIL</p>
+                        <a href="mailto:sheikhfasiha32@gmail.com">
+                            sheikhfasiha32@gmail.com
+                        </a>
+                    </div>
+                </div>
 
-                <p><strong>Location:</strong> Lahore, Pakistan</p>
+                <div class="contact-item">
+                    <span class="contact-icon">⌖</span>
+                    <div>
+                        <p class="card-label">LOCATION</p>
+                        <p>Lahore, Pakistan</p>
+                    </div>
+                </div>
 
-                <p>
-                    <strong>GitHub:</strong>
-                    <a href="https://github.com/sheikhfasiha32-beep"
-                       target="_blank" rel="noopener noreferrer">
-                        Visit My GitHub Profile
-                    </a>
-                </p>
+                <div class="contact-item">
+                    <span class="contact-icon">↗</span>
+                    <div>
+                        <p class="card-label">GITHUB</p>
+                        <a
+                            href="https://github.com/sheikhfasiha32-beep"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Visit My GitHub Profile
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
+
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <a href="#home" class="logo">FN<span>.</span></a>
+
         <p>Fasiha Nadeem | Computer Science Student | Cybersecurity</p>
-        <p>&copy; <span id="current-year"></span> Fasiha Nadeem. All rights reserved.</p>
+
+        <p>
+            &copy; <span id="current-year"></span>
+            Fasiha Nadeem. All rights reserved.
+        </p>
     </footer>
 
 </body>
 </html>
+```
